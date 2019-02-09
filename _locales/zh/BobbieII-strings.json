@@ -1,0 +1,10 @@
+{
+　　"BobbieII|block": "寶比II",
+　　"BobbieII.forward|block": "寶比II 向前行走",
+        "BobbieII.backward|block": "寶比II 向後行走",
+        "BobbieII.rightward|block": "寶比II 向右轉",
+        "BobbieII.leftward|block": "寶比II 向左轉",
+        "BobbieII.stopwalk|block": "寶比II 停止行走",
+        "BobbieII.stopturn|block": "寶比II 停止轉動"
+}
+

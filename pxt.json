@@ -1,7 +1,7 @@
 {
-    "name": "BobbieII",
+    "name": "TobbieII",
     "version": "1.0.1",
-    "description": "Extension for Bobbie-II",
+    "description": "Extension for Tobbie-II",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "main.ts",
-        "_locales/zh/BobbieII-strings.json"
+        "_locales/zh/TobbieII-strings.json"
     ],
     "public": true
 }

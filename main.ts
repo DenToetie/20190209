@@ -1,6 +1,6 @@
 //% weight=0 color=#FF8B27 icon="\uf1b9" block="TobbieII"
 //uf1b9
-namespace BobbieII {
+namespace TobbieII {
     let ADL_R: number = 0;
     let ADH_R: number = 0;
     let ADL_L: number = 0;

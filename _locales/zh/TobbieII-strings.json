@@ -1,10 +1,7 @@
 {
-¡@¡@"BobbieII|block": "Ä_¤ñII",
-¡@¡@"BobbieII.forward|block": "Ä_¤ñII ¦V«e¦æ¨«",
-        "BobbieII.backward|block": "Ä_¤ñII ¦V«á¦æ¨«",
-        "BobbieII.rightward|block": "Ä_¤ñII ¦V¥kÂà",
-        "BobbieII.leftward|block": "Ä_¤ñII ¦V¥ªÂà",
-        "BobbieII.stopwalk|block": "Ä_¤ñII °±¤î¦æ¨«",
-        "BobbieII.stopturn|block": "Ä_¤ñII °±¤îÂà°Ê"
+"TobbieII|block": "å¯¶æ¯”ç¨‹å¼æ–¹å¡Š",
+"TobbieII.forward|block": "å¯¶æ¯”å‘å‰è¡Œèµ°",
+"TobbieII.backward|block": "å¯¶æ¯”å‘å¾Œè¡Œèµ°"
+        
 }
 

@@ -1,0 +1,10 @@
+﻿{
+　　"cic_blocks|block": "小黃",
+　　"cic_blocks.forward|block": "小黃向前行走",
+	"cic_blocks.backward|block": "小黃向後行走",
+	"cic_blocks.rightward|block": "小黃向右轉",
+	"cic_blocks.leftward|block": "小黃向左轉",
+	"cic_blocks.stopwalk|block": "小黃停止行走",
+	"cic_blocks.stopturn|block": "小黃停止轉動"
+}
+

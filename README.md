@@ -1,6 +1,6 @@
-#BobbieII
+#TobbieII
 
-Extension for Bobbie-II
+Extension for Tobbie-II
 
 ## License
 
@@ -12,6 +12,6 @@ MIT
 (The metadata above is needed for package search.)
 
 ```package
-BobbieII=github:kaku111/cic20180921
+TobbieII=github:kaku111/cic20190209_1
 ```
 

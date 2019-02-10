@@ -1,7 +1,12 @@
 {
 "TobbieII|block": "寶比程式方塊",
-"TobbieII.forward|block": "寶比向前行走",
-"TobbieII.backward|block": "寶比向後行走"
+
+"TobbieII.Read_RBlock|block": "讀取右側紅外線測距值(0~1024)",
+"TobbieII.Read_LBlock|block": "讀取左側紅外線測距值(0~1024)",
+"TobbieII.RBlock|block": "右側IR值是否大於 %thresholdR|值 ",
+"TobbieII.LBlock|block": "左側IR值是否大於 %thresholdL|值 ",
+"TobbieII.forward|block": "向前行走",
+"TobbieII.backward|block": "向後行走"
         
 }
 

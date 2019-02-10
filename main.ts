@@ -71,7 +71,7 @@ namespace TobbieII {
  
     /** Read the value sensed by the right side of the infrared.
     */
-    //% blockId="Read_RBolck" block="Get right IR data(return 0~1024)"
+    //% blockId="Read_RBolck" block="get right IR data(return 0~1024)"
     //% blockGap=5 weight=65                 //與下一個方塊的間隙及排重
     export function Read_RBlock() :number {
         ADL_R = pins.analogReadPin(AnalogPin.P2)
@@ -84,7 +84,7 @@ namespace TobbieII {
     }
     /** Read the value sensed by the left side of the infrared.
     */
-    //% blockId="Read_LBolck" block="Get left IR data(trtuen 0~1024)"
+    //% blockId="Read_LBolck" block="get left IR data(trtuen 0~1024)"
     //% blockGap=15 weight=60                 //與下一個方塊的間隙及排重
     export function Read_LBlock() :number {
         ADL_L = pins.analogReadPin(AnalogPin.P1)
@@ -100,7 +100,7 @@ namespace TobbieII {
     *Determine if there are obstacles on the right side.
     *@param thresholdR ; eg: 512
     */
-    //% blockId="RBolck" block="Is Right IR over %thresholdR strength"
+    //% blockId="RBolck" block="is the right IR over %thresholdR strength"
     //% thresholdR.min=0 thresholdR.max=1023
     //% blockGap=5 weight=58
     export function RBlock(thresholdR: number = 512 ) :boolean {
@@ -122,7 +122,7 @@ namespace TobbieII {
     *Determine if there are obstacles on the left side.
     *@param thresholdL ; eg: 512
     */
-    //% blockId="LBolck" block="Is Left IR over %thresholdL strength"
+    //% blockId="LBolck" block="is the left IR over %thresholdL strength"
     //% thresholdL.min=0 thresholdL.max=1023
     //% blockGap=10 weight=57
     export function LBlock(thresholdL: number=512 ) :boolean {
@@ -182,7 +182,7 @@ namespace TobbieII {
     /**
     *Tobbie-II walking forward.
     */
-    //% blockId="forward" block="Tobbie-II walk forward"
+    //% blockId="forward" block="Tobbie-II walking forward"
     //% blockGap=3 weight=35
     export function forward() {
         if (pins.digitalReadPin(DigitalPin.P8) == 1) {
@@ -193,7 +193,7 @@ namespace TobbieII {
     /**
     *Tobbie-II walking backward.
     */
-    //% blockId="backward" block="Tobbie-II walk  backward"
+    //% blockId="backward" block="Tobbie-II walking backward"
     //% blockGap=3  weight=34
     export function backward() {
         if (Force != 0) {
@@ -207,7 +207,7 @@ namespace TobbieII {
     /**
     *Tobbie-II stop walking.
     */
-    //% blockId="stopwalk" block="Tobbie-II stop walk"
+    //% blockId="stopwalk" block="Tobbie-II stop walking"
     //% blockGap=10 weight=33
     export function stopwalk() {
         pins.digitalWritePin(DigitalPin.P13, 0)
@@ -216,7 +216,7 @@ namespace TobbieII {
     /**
     *Tobbie-II rotates to the right.
     */
-    //% blockId="rightward" block="Tobbie-II turn right"
+    //% blockId="rightward" block="Tobbie-II turns right"
     //% blockGap=3  weight=32
     export function rightward() {
         pins.digitalWritePin(DigitalPin.P15, 0)
@@ -227,7 +227,7 @@ namespace TobbieII {
     /**
     *Tobbie-II rotates to the left.
     */
-    //% blockId="leftward" block="Tobbie-II turn left"
+    //% blockId="leftward" block="Tobbie-II turns left"
     //% blockGap=3  weight=31
     export function leftward() {
        pins.digitalWritePin(DigitalPin.P15, 1)
@@ -238,7 +238,7 @@ namespace TobbieII {
     /**
     *Tobbie-II stops spinning.
     */
-    //% blockId="stopturn" block="Tobbie-II stop turn"
+    //% blockId="stopturn" block="Tobbie-II stops rotating."
     //% blockGap=10 weight=30
     export function stopturn() {
         if (Motor_L || Motor_R) {
@@ -262,7 +262,7 @@ namespace TobbieII {
     *Tobbie-II shakes back and forth for times.
     *@param time describe parameter here, eg:5
     */
-    //% blockId="vibrate" block="Tobbie-II vibrate %time times"
+    //% blockId="vibrate" block="Tobbie-II vibrates %time times"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=25
     //% advanced=true
@@ -282,7 +282,7 @@ namespace TobbieII {
     *Tobbie-II shakes its head left and right for times.
     *@param time describe parameter here, eg:5
     */
-    //% blockId="shake_head" block="Tobbie-II shake head %time times"
+    //% blockId="shake_head" block="Tobbie-II shakes the head %time times"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=26
     //% advanced=true

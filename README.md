@@ -2,6 +2,15 @@
 
 Extension for Tobbie-II
 
+##Code Example
+
+basic.forever(function () {
+    TobbieII.forward()
+    if (TobbieII.RBlock(512)) {
+        TobbieII.stopwalk()
+    }
+})
+
 ## License
 
 MIT

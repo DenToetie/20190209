@@ -2,7 +2,7 @@
 
 Extension for Tobbie-II
 
-##Code Example
+## Code Example
 
 basic.forever(function () {
     TobbieII.forward()

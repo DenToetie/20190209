@@ -14,6 +14,6 @@
 "TobbieII.vibrate|block": "寶比II發出振動 %time|次 ",
 "TobbieII.shake_head|block": "寶比II搖搖頭 %time|次 ",
 "TobbieII.dance|block": "寶比II愛跳舞 %time|次 ", 
-"TobbieII.Drawface|block": "顯示寶比II表情 %RX_Data|(APP專用)"
+"TobbieII.drawface|block": "顯示寶比II表情 %RX_Data|(APP專用)"
 }
 

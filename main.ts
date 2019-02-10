@@ -328,7 +328,7 @@ namespace TobbieII {
     *Display robot expression(only for APP).
     *@param RX_Data describe parameter here
     */
-    //% blockId="BLE_DOT" block="Draw your face(APP only) %RX_Data"
+    //% blockId="BLE_DOT" block="draw your face(APP only) %RX_Data"
     //% blockGap=5 weight=23
     //% advanced=true
     export function drawface(RX_Data: string): void{

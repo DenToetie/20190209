@@ -37,10 +37,10 @@ namespace TobbieII {
         )
 
     }
-//    /**
-//    *背景執行紅外線測距
-//    *@param irdata_Set ; eg: 512
-//    */
+//    
+//    背景執行紅外線測距
+//    @param irdata_Set ; eg: 512
+//    
 //    //% blockId="IR_EVENTL" block="ON obstacles on the left: |%irdata_Set"
 //    //% irdata_Set.min=0 irdata_Set.max=1023
 //    //% blockGap=10 weight=99   //代表其重要性，越重放越高
@@ -69,7 +69,7 @@ namespace TobbieII {
 //        )
 //    }
  
-    /** 讀取右側紅外線感應到的值
+    /** Read the value sensed by the right side of the infrared.
     */
     //% blockId="Read_RBolck" block="Get right IR data(return 0~1024)"
     //% blockGap=5 weight=65                 //與下一個方塊的間隙及排重
@@ -82,7 +82,7 @@ namespace TobbieII {
         if (pins.digitalReadPin(DigitalPin.P8) == 1) Read_RIR = ADH_R - ADL_R;
         return (Read_RIR)     
     }
-    /** 讀取左側紅外線感應到的值
+    /** Read the value sensed by the left side of the infrared.
     */
     //% blockId="Read_LBolck" block="Get left IR data(trtuen 0~1024)"
     //% blockGap=15 weight=60                 //與下一個方塊的間隙及排重
@@ -97,7 +97,7 @@ namespace TobbieII {
         return(Read_LIR)       
     }
 /**
-    *判斷右邊是否有障礙物
+    *Determine if there are obstacles on the right side.
     *@param thresholdR ; eg: 512
     */
     //% blockId="RBolck" block="Is Right IR over %thresholdR strength"
@@ -119,7 +119,7 @@ namespace TobbieII {
         }     
     }
     /**
-    *判斷左邊是否有障礙物
+    *Determine if there are obstacles on the left side.
     *@param thresholdL ; eg: 512
     */
     //% blockId="LBolck" block="Is Left IR over %thresholdL strength"
@@ -144,8 +144,8 @@ namespace TobbieII {
         }     
     }
     
-    /**
-    *輸出脈波*/
+    
+    //輸出脈波
     //% blockId="IRbolck" block="Out pulse & show-04"
     //% blockGap=10 weight=55
     //export function IRblock() {
@@ -180,7 +180,7 @@ namespace TobbieII {
      //return(true)       
     //}
     /**
-    *向前行走
+    *Tobbie-II walking forward.
     */
     //% blockId="forward" block="Tobbie-II walk forward"
     //% blockGap=3 weight=35
@@ -191,7 +191,7 @@ namespace TobbieII {
         }
     }
     /**
-    *向後行走
+    *Tobbie-II walking backward.
     */
     //% blockId="backward" block="Tobbie-II walk  backward"
     //% blockGap=3  weight=34
@@ -205,7 +205,7 @@ namespace TobbieII {
 
     }
     /**
-    *停止行走
+    *Tobbie-II stop walking.
     */
     //% blockId="stopwalk" block="Tobbie-II stop walk"
     //% blockGap=10 weight=33
@@ -214,7 +214,7 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P14, 0)
     }
     /**
-    *向右旋轉
+    *Tobbie-II rotates to the right.
     */
     //% blockId="rightward" block="Tobbie-II turn right"
     //% blockGap=3  weight=32
@@ -225,7 +225,7 @@ namespace TobbieII {
         Motor_R=true
     }
     /**
-    *向左旋轉
+    *Tobbie-II rotates to the left.
     */
     //% blockId="leftward" block="Tobbie-II turn left"
     //% blockGap=3  weight=31
@@ -236,7 +236,7 @@ namespace TobbieII {
         Motor_R=false
     }
     /**
-    *停止旋轉煞車
+    *Tobbie-II stops spinning.
     */
     //% blockId="stopturn" block="Tobbie-II stop turn"
     //% blockGap=10 weight=30
@@ -259,7 +259,7 @@ namespace TobbieII {
     }
     
  /**
-    *前後振動
+    *Tobbie-II shakes back and forth for times.
     *@param time describe parameter here, eg:5
     */
     //% blockId="vibrate" block="Tobbie-II vibrate %time times"
@@ -279,7 +279,7 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P14, 0)
     }   
  /**
-    *左右搖頭
+    *Tobbie-II shakes its head left and right for times.
     *@param time describe parameter here, eg:5
     */
     //% blockId="shake_head" block="Tobbie-II shake head %time times"
@@ -299,7 +299,7 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P16, 0)
     }      
 /**
-    *跳舞搖頭加振動
+    *Tobbie-II dances for times.
     *@param time describe parameter here, eg:5
     */
     //% blockId="dance" block="Tobbie-II dance %time time"
@@ -325,7 +325,7 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P16, 0)
     } 
 /**
-    *藍牙專用
+    *Display robot expression(only for APP).
     *@param RX_Data describe parameter here
     */
     //% blockId="BLE_DOT" block="Draw your face(APP only) %RX_Data"

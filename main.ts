@@ -259,7 +259,7 @@ namespace TobbieII {
     }
     
  /**
-    *Tobbie-II shakes back and forth for times.
+    *Tobbie-II stamps his foot for times.
     *@param time describe parameter here, eg:5
     */
     //% blockId="vibrate" block="Tobbie-II vibrates %time times"
@@ -279,10 +279,10 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P14, 0)
     }   
  /**
-    *Tobbie-II shakes its head left and right for times.
+    *Tobbie-II shakes his head for times.
     *@param time describe parameter here, eg:5
     */
-    //% blockId="shake_head" block="Tobbie-II shakes the head %time times"
+    //% blockId="shake_head" block="Tobbie-II shakes head %time times"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=26
     //% advanced=true
@@ -302,7 +302,7 @@ namespace TobbieII {
     *Tobbie-II dances for times.
     *@param time describe parameter here, eg:5
     */
-    //% blockId="dance" block="Tobbie-II dance %time time"
+    //% blockId="dance" block="Tobbie-II dances %time time"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=24
     //% advanced=true
@@ -325,10 +325,10 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P16, 0)
     } 
 /**
-    *Display robot expression(only for APP).
+    *Tobbie II shows his mood on face(only for APP).
     *@param RX_Data describe parameter here
     */
-    //% blockId="BLE_DOT" block="draw your face(APP only) %RX_Data"
+    //% blockId="BLE_DOT" block="Tobbie II shows mood on face(APP only) %RX_Data"
     //% blockGap=5 weight=23
     //% advanced=true
     export function drawface(RX_Data: string): void{

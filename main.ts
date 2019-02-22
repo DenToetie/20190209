@@ -69,7 +69,7 @@ namespace TobbieII {
 //        )
 //    }
  
-    /** Read the value sensed by the right side of the infrared.
+    /** Read the value sensed by the right side of the infrared sensor.
     */
     //% blockId="Read_RBolck" block="get right IR data(return 0~1024)"
     //% blockGap=5 weight=65                 //與下一個方塊的間隙及排重
@@ -82,7 +82,7 @@ namespace TobbieII {
         if (pins.digitalReadPin(DigitalPin.P8) == 1) Read_RIR = ADH_R - ADL_R;
         return (Read_RIR)     
     }
-    /** Read the value sensed by the left side of the infrared.
+    /** Read the value sensed by the left side of the infrared sensor.
     */
     //% blockId="Read_LBolck" block="get left IR data(trtuen 0~1024)"
     //% blockGap=15 weight=60                 //與下一個方塊的間隙及排重
@@ -180,7 +180,7 @@ namespace TobbieII {
      //return(true)       
     //}
     /**
-    *Tobbie-II walking forward.
+    *Tobbie-II walks forward.
     */
     //% blockId="forward" block="Tobbie-II walking forward"
     //% blockGap=3 weight=35
@@ -191,7 +191,7 @@ namespace TobbieII {
         }
     }
     /**
-    *Tobbie-II walking backward.
+    *Tobbie-II walks backward.
     */
     //% blockId="backward" block="Tobbie-II walking backward"
     //% blockGap=3  weight=34
@@ -205,7 +205,7 @@ namespace TobbieII {
 
     }
     /**
-    *Tobbie-II stop walking.
+    *Tobbie-II stops walking.
     */
     //% blockId="stopwalk" block="Tobbie-II stop walking"
     //% blockGap=10 weight=33
@@ -236,7 +236,7 @@ namespace TobbieII {
         Motor_R=false
     }
     /**
-    *Tobbie-II stops spinning.
+    *Tobbie-II stops rotating.
     */
     //% blockId="stopturn" block="Tobbie-II stops rotating."
     //% blockGap=10 weight=30
@@ -259,10 +259,10 @@ namespace TobbieII {
     }
     
  /**
-    *Tobbie-II stamps his foot for times.
+    *Tobbie-II stamps his foot for a certain number of times.
     *@param time describe parameter here, eg:5
     */
-    //% blockId="vibrate" block="Tobbie-II vibrates %time times"
+    //% blockId="vibrate" block="Tobbie-II stamps %time times"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=25
     //% advanced=true
@@ -279,7 +279,7 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P14, 0)
     }   
  /**
-    *Tobbie-II shakes his head for times.
+    *Tobbie-II shakes his head for a certain number of times.
     *@param time describe parameter here, eg:5
     */
     //% blockId="shake_head" block="Tobbie-II shakes head %time times"
@@ -299,10 +299,10 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P16, 0)
     }      
 /**
-    *Tobbie-II dances for times.
+    *Tobbie-II repeats the dance for for a certain number of times.
     *@param time describe parameter here, eg:5
     */
-    //% blockId="dance" block="Tobbie-II dances %time time"
+    //% blockId="dance" block="Tobbie-II dances %time times"
     //% time.min=1 time.max=100
     //% blockGap=5 weight=24
     //% advanced=true
@@ -325,7 +325,7 @@ namespace TobbieII {
         pins.digitalWritePin(DigitalPin.P16, 0)
     } 
 /**
-    *Tobbie II shows his mood on face(only for APP).
+    *Tobbie II shows his mood on the face (APP only).
     *@param RX_Data describe parameter here
     */
     //% blockId="BLE_DOT" block="Tobbie II shows mood on face(APP only) %RX_Data"

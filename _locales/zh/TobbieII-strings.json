@@ -11,7 +11,7 @@
 "TobbieII.rightward|block": "寶比II向右旋轉",
 "TobbieII.leftward|block": "寶比II向左旋轉",
 "TobbieII.stopturn|block": "寶比II停止旋轉",
-"TobbieII.vibrate|block": "寶比II發出振動 %time|次 ",
+"TobbieII.vibrate|block": "寶比II踱步 %time|次 ",
 "TobbieII.shake_head|block": "寶比II搖搖頭 %time|次 ",
 "TobbieII.dance|block": "寶比II愛跳舞 %time|次 ", 
 "TobbieII.drawface|block": "顯示寶比II表情 %RX_Data|(APP專用)"

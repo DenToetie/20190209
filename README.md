@@ -24,5 +24,5 @@ MIT
 ```package
 TobbieII=github:kaku111/cic20190209_1
 ```
-
+Product information-->https://science.prokits.com.tw/
 

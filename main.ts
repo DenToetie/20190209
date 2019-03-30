@@ -84,7 +84,7 @@ namespace TobbieII {
     }
     /** Read the value sensed by the left side of the infrared sensor.
     */
-    //% blockId="Read_LBolck" block="get left IR data(trtuen 0~1024)"
+    //% blockId="Read_LBolck" block="get left IR data(return 0~1024)"
     //% blockGap=15 weight=60                 //與下一個方塊的間隙及排重
     export function Read_LBlock() :number {
         ADL_L = pins.analogReadPin(AnalogPin.P1)

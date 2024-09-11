@@ -1,1 +1,18 @@
+{
+"TobbieII|blok": "Tobbie II|blok",
 
+"TobbieII.Read_RBlock|block": "Lees de rechter IR-waarde (0~1024)",
+"TobbieII.Read_LBlock|block": "Lees de linker IR-waarde (0~1024)",
+"TobbieII.RBlock|block": "Als de rechter IR-waarde groter is dan %thresholdR|value",
+"TobbieII.LBlock|block": "Of de linker IR-waarde groter is dan %thresholdL|value",
+"TobbieII.forward|block": "loop vooruit",
+"TobbieII.backward|block": "loop achteruit",
+"TobbieII.stopwalk|block": "stop met lopen|block",
+"TobbieII.rightward|block": " draait naar rechts",
+"TobbieII.leftward|block": " draait naar links",
+"TobbieII.stopturn|block": " stopt met draaien",
+"TobbieII.vibrate|block": " schud %time|times",
+"TobbieII.shake_head|block": " schud hoofd %time|times zijn hoofd",
+"TobbieII.dance|block": " dans %time|times",
+"TobbieII.drawface|block": "Toon uitdrukking %RX_Data|(alleen APP)"
+}

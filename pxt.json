@@ -11,5 +11,10 @@
         "main.ts",
         "_locales/zh/TobbieII-strings.json"
     ],
+    "files": [
+        "README.md",
+        "main.ts",
+        "_locales/nl/TobbieII-strings.json"
+    ],
     "public": true
 }
